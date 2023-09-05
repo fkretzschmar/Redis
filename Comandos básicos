@@ -1,0 +1,39 @@
+https://try.redis.io
+
+SET nome "Felipe"
+
+GET nome
+
+KEYS nome*
+
+DEL nome
+
+#Dar um tempo de vida
+EXPIRE nome 60
+
+#verificar o tempo de vida
+TTL nome
+
+EXISTS nome
+
+________________________________________________________________________________________________________________________________
+
+SET acessos 1
+
+INCR acessos
+Resultado: acessos será alterado para 2
+
+DECR acessos
+Resultado: acesso retornara para 1
+
+_________________________________________________________________________________________________________________________________
+
+array
+
+LPUSH usuarios "Pamela" "Joao" "Maria"
+
+#consultar array
+LRANGE usuarios 0 -1
+
+#quantos elementos tem no array
+LLEN usuarios
